@@ -7,6 +7,7 @@ import javax.validation.Valid;
 import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Pattern;
 import javax.validation.constraints.Size;
+
 import com.fasterxml.jackson.annotation.JsonAnyGetter;
 import com.fasterxml.jackson.annotation.JsonAnySetter;
 import com.fasterxml.jackson.annotation.JsonCreator;
@@ -22,7 +23,6 @@ import com.fasterxml.jackson.annotation.JsonValue;
  * Ticket Update resource
  * <p>
  * Ticket Update resource object
- *
  */
 @JsonInclude(JsonInclude.Include.NON_NULL)
 @JsonPropertyOrder({
@@ -41,7 +41,6 @@ public class TicketUpdate {
 
     /**
      * pnr
-     *
      */
     @JsonProperty("pnr")
     @JsonPropertyDescription("pnr")
@@ -50,7 +49,6 @@ public class TicketUpdate {
     private String pnr;
     /**
      * first name
-     *
      */
     @JsonProperty("first_name")
     @JsonPropertyDescription("first name")
@@ -58,7 +56,6 @@ public class TicketUpdate {
     private String firstName;
     /**
      * last name
-     *
      */
     @JsonProperty("last_name")
     @JsonPropertyDescription("last name")
@@ -66,7 +63,6 @@ public class TicketUpdate {
     private String lastName;
     /**
      * fare class
-     *
      */
     @JsonProperty("fare_class")
     @JsonPropertyDescription("fare class")
@@ -75,7 +71,6 @@ public class TicketUpdate {
     private String fareClass;
     /**
      * travel date
-     *
      */
     @JsonProperty("travel_date")
     @JsonPropertyDescription("travel date")
@@ -83,14 +78,12 @@ public class TicketUpdate {
     private String travelDate;
     /**
      * number of passengers
-     *
      */
     @JsonProperty("pax")
     @JsonPropertyDescription("number of passengers")
     private Integer pax;
     /**
      * Date of Booking
-     *
      */
     @JsonProperty("ticketing_date")
     @JsonPropertyDescription("Date of Booking")
@@ -98,15 +91,13 @@ public class TicketUpdate {
     private String ticketingDate;
     /**
      * Email
-     *
      */
     @JsonProperty("email")
     @JsonPropertyDescription("Email")
-    @Pattern(regexp =  "^(.+)@(.+)$")
+    @Pattern(regexp = "^(.+)@(.+)$")
     private String email;
     /**
      * Mobile phone
-     *
      */
     @JsonProperty("mobile_phone")
     @JsonPropertyDescription("Mobile phone")
@@ -115,7 +106,6 @@ public class TicketUpdate {
     /**
      * Booked Cabin
      * (Required)
-     *
      */
     @JsonProperty("booked_cabin")
     @JsonPropertyDescription("Booked Cabin")
@@ -127,7 +117,6 @@ public class TicketUpdate {
 
     /**
      * pnr
-     *
      */
     @JsonProperty("pnr")
     public String getPnr() {
@@ -136,7 +125,6 @@ public class TicketUpdate {
 
     /**
      * pnr
-     *
      */
     @JsonProperty("pnr")
     public void setPnr(String pnr) {
@@ -145,7 +133,6 @@ public class TicketUpdate {
 
     /**
      * first name
-     *
      */
     @JsonProperty("first_name")
     public String getFirstName() {
@@ -154,7 +141,6 @@ public class TicketUpdate {
 
     /**
      * first name
-     *
      */
     @JsonProperty("first_name")
     public void setFirstName(String firstName) {
@@ -163,7 +149,6 @@ public class TicketUpdate {
 
     /**
      * last name
-     *
      */
     @JsonProperty("last_name")
     public String getLastName() {
@@ -172,7 +157,6 @@ public class TicketUpdate {
 
     /**
      * last name
-     *
      */
     @JsonProperty("last_name")
     public void setLastName(String lastName) {
@@ -181,7 +165,6 @@ public class TicketUpdate {
 
     /**
      * fare class
-     *
      */
     @JsonProperty("fare_class")
     public String getFareClass() {
@@ -190,7 +173,6 @@ public class TicketUpdate {
 
     /**
      * fare class
-     *
      */
     @JsonProperty("fare_class")
     public void setFareClass(String fareClass) {
@@ -199,7 +181,6 @@ public class TicketUpdate {
 
     /**
      * travel date
-     *
      */
     @JsonProperty("travel_date")
     public String getTravelDate() {
@@ -208,7 +189,6 @@ public class TicketUpdate {
 
     /**
      * travel date
-     *
      */
     @JsonProperty("travel_date")
     public void setTravelDate(String travelDate) {
@@ -217,7 +197,6 @@ public class TicketUpdate {
 
     /**
      * number of passengers
-     *
      */
     @JsonProperty("pax")
     public Integer getPax() {
@@ -226,7 +205,6 @@ public class TicketUpdate {
 
     /**
      * number of passengers
-     *
      */
     @JsonProperty("pax")
     public void setPax(Integer pax) {
@@ -235,7 +213,6 @@ public class TicketUpdate {
 
     /**
      * Date of Booking
-     *
      */
     @JsonProperty("ticketing_date")
     public String getTicketingDate() {
@@ -244,7 +221,6 @@ public class TicketUpdate {
 
     /**
      * Date of Booking
-     *
      */
     @JsonProperty("ticketing_date")
     public void setTicketingDate(String ticketingDate) {
@@ -253,7 +229,6 @@ public class TicketUpdate {
 
     /**
      * Email
-     *
      */
     @JsonProperty("email")
     public String getEmail() {
@@ -262,7 +237,6 @@ public class TicketUpdate {
 
     /**
      * Email
-     *
      */
     @JsonProperty("email")
     public void setEmail(String email) {
@@ -271,7 +245,6 @@ public class TicketUpdate {
 
     /**
      * Mobile phone
-     *
      */
     @JsonProperty("mobile_phone")
     public String getMobilePhone() {
@@ -280,7 +253,6 @@ public class TicketUpdate {
 
     /**
      * Mobile phone
-     *
      */
     @JsonProperty("mobile_hone")
     public void setMobilePhone(String mobilePhone) {
@@ -290,7 +262,6 @@ public class TicketUpdate {
     /**
      * Booked Cabin
      * (Required)
-     *
      */
     @JsonProperty("booked_cabin")
     public TicketUpdate.BookedCabin getBookedCabin() {
@@ -300,7 +271,6 @@ public class TicketUpdate {
     /**
      * Booked Cabin
      * (Required)
-     *
      */
     @JsonProperty("booked_cabin")
     public void setBookedCabin(TicketUpdate.BookedCabin bookedCabin) {
@@ -323,50 +293,50 @@ public class TicketUpdate {
         sb.append(TicketUpdate.class.getName()).append('@').append(Integer.toHexString(System.identityHashCode(this))).append('[');
         sb.append("pnr");
         sb.append('=');
-        sb.append(((this.pnr == null)?"<null>":this.pnr));
+        sb.append(((this.pnr == null) ? "<null>" : this.pnr));
         sb.append(',');
         sb.append("firstName");
         sb.append('=');
-        sb.append(((this.firstName == null)?"<null>":this.firstName));
+        sb.append(((this.firstName == null) ? "<null>" : this.firstName));
         sb.append(',');
         sb.append("lastName");
         sb.append('=');
-        sb.append(((this.lastName == null)?"<null>":this.lastName));
+        sb.append(((this.lastName == null) ? "<null>" : this.lastName));
         sb.append(',');
         sb.append("fareClass");
         sb.append('=');
-        sb.append(((this.fareClass == null)?"<null>":this.fareClass));
+        sb.append(((this.fareClass == null) ? "<null>" : this.fareClass));
         sb.append(',');
         sb.append("travelDate");
         sb.append('=');
-        sb.append(((this.travelDate == null)?"<null>":this.travelDate));
+        sb.append(((this.travelDate == null) ? "<null>" : this.travelDate));
         sb.append(',');
         sb.append("pax");
         sb.append('=');
-        sb.append(((this.pax == null)?"<null>":this.pax));
+        sb.append(((this.pax == null) ? "<null>" : this.pax));
         sb.append(',');
         sb.append("ticketingDate");
         sb.append('=');
-        sb.append(((this.ticketingDate == null)?"<null>":this.ticketingDate));
+        sb.append(((this.ticketingDate == null) ? "<null>" : this.ticketingDate));
         sb.append(',');
         sb.append("email");
         sb.append('=');
-        sb.append(((this.email == null)?"<null>":this.email));
+        sb.append(((this.email == null) ? "<null>" : this.email));
         sb.append(',');
         sb.append("mobilePhone");
         sb.append('=');
-        sb.append(((this.mobilePhone == null)?"<null>":this.mobilePhone));
+        sb.append(((this.mobilePhone == null) ? "<null>" : this.mobilePhone));
         sb.append(',');
         sb.append("bookedCabin");
         sb.append('=');
-        sb.append(((this.bookedCabin == null)?"<null>":this.bookedCabin));
+        sb.append(((this.bookedCabin == null) ? "<null>" : this.bookedCabin));
         sb.append(',');
         sb.append("additionalProperties");
         sb.append('=');
-        sb.append(((this.additionalProperties == null)?"<null>":this.additionalProperties));
+        sb.append(((this.additionalProperties == null) ? "<null>" : this.additionalProperties));
         sb.append(',');
-        if (sb.charAt((sb.length()- 1)) == ',') {
-            sb.setCharAt((sb.length()- 1), ']');
+        if (sb.charAt((sb.length() - 1)) == ',') {
+            sb.setCharAt((sb.length() - 1), ']');
         } else {
             sb.append(']');
         }
@@ -376,7 +346,6 @@ public class TicketUpdate {
 
     /**
      * Booked Cabin
-     *
      */
     public enum BookedCabin {
 
@@ -388,7 +357,7 @@ public class TicketUpdate {
         private final static Map<String, TicketUpdate.BookedCabin> CONSTANTS = new HashMap<String, TicketUpdate.BookedCabin>();
 
         static {
-            for (TicketUpdate.BookedCabin c: values()) {
+            for (TicketUpdate.BookedCabin c : values()) {
                 CONSTANTS.put(c.value, c);
             }
         }

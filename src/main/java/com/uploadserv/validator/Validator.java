@@ -74,7 +74,7 @@ public class Validator {
             Date ticketingDate = simpleDateFormat.parse(ticketingDateString);
             if (ticketingDate.after(travelDate)) {
                 throw new BusinessException("Ticketing date should be before Travel date",
-                       "TicketingDate" ,
+                        "TicketingDate",
                         "DATE_VALIDATION",
                         HttpStatus.BAD_REQUEST);
             }

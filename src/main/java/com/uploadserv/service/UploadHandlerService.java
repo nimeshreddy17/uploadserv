@@ -27,7 +27,6 @@ public class UploadHandlerService implements UploadHandlerInterface {
     private static final Logger LOG = LoggerFactory.getLogger(UploadHandlerService.class);
 
 
-
     /**
      * @param input Input row to be parsed
      * @return String[]
