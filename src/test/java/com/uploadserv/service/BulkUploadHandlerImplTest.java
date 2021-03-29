@@ -26,8 +26,8 @@ public class BulkUploadHandlerImplTest {
     public void testFunctionality() throws IOException {
         ResponseEntity<TicketUpdateResponse> response = bulkUploadHandler.uploadCSVFile("upload.csv");
         TicketUpdateResponse updateResponse = response.getBody();
-        Assert.assertEquals(updateResponse.getFailedRecords().size(), 2);
-        Assert.assertEquals(updateResponse.getFailedRecords().get(0)[10], "Invalid Email");
+        Assert.assertEquals(11, updateResponse.getFailedRecords().size());
+        Assert.assertEquals(updateResponse.getFailedRecords().get(0)[10], "Invalid PNR");
         Assert.assertEquals(updateResponse.getFailedRecords().get(1)[10], "Invalid Booked_cabin");
 
         //OFFER_30 OFFER_25

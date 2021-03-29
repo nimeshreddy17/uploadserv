@@ -14,11 +14,16 @@ import java.util.Date;
 import static com.uploadserv.constants.Constants.*;
 import static com.uploadserv.constants.Constants.expectedHeaderList;
 
+/**
+ * This class has all relevant validations required for parsing a CSV
+ * like pattern matching, number parsing, Business Validations
+ */
 @Component
 public class Validator {
 
 
     public static void validate(String[] input) {
+
         FieldValidator.validate(input[3], expectedHeaderList[3], FARE_CLASS_PATTERN);
         FieldValidator.validate(input[7], expectedHeaderList[7], EMAIL_PATTERN);
         FieldValidator.validate(input[8], expectedHeaderList[8], MOBILE_NUMBER_PATTERN);
